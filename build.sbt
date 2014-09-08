@@ -16,7 +16,8 @@ libraryDependencies ++= {
     "com.typesafe.akka"   %%  "akka-actor"    % akkaV,
     "com.typesafe.akka"   %%  "akka-testkit"  % akkaV   % "test",
     "com.typesafe.play"   %%  "play-json"     % "2.3.4",
-    "org.specs2"          %%  "specs2-core"   % "2.3.7" % "test"
+    "org.specs2"          %%  "specs2-core"   % "2.3.7" % "test",
+    "com.wandoulabs.akka" %% "spray-websocket" % "0.1.2" exclude("io.spray", "spray-can") exclude("io.spray", "spray-routing") 
   )
 }
 
